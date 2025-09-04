@@ -1,5 +1,5 @@
 
-//3658. GCD of Odd and Even Sums
+   //3658. GCD of Odd and Even Sums
 #include<bits/stdc++.h>
 #include<iostream>
 #include<algorithm>

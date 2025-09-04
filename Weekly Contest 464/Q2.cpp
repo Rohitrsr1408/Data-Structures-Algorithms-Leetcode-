@@ -21,5 +21,5 @@ public:
 
         int groups = nums.size() / k;
         return maxFreq <= groups;
-    }
+ }
 };
