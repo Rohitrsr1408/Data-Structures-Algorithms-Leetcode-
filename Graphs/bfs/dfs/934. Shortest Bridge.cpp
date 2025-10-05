@@ -7,7 +7,9 @@ private:
         vector<int> xdir = {-1,0,1,0};
         vector<int> ydir = {0,1,0,-1};
         while (!q.empty()) {
-            auto [r,c] = q.front();
+            auto p = q.front();
+            int r = p.first;
+            int c = p.second;
             q.pop();
             for (int k = 0; k < 4; k++) {
                 int newr = r + xdir[k];
@@ -56,7 +58,9 @@ public:
             int size = q.size();
             ans++;
             for (int i = 0; i < size; i++) {
-                auto [r,c] = q.front();
+                auto p = q.front();
+                int r = p.first;
+                int c = p.second;
                 q.pop();
                 for (int k = 0; k < 4; k++) {
                     int newr = r + xdir[k];
